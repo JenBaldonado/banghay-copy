@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BANGHAY</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <div class="header bg-light">
+
+    <div class="auth-btn">
+      <button class="signin">Sign In</button>
+      <button class="signout">Sign Out</button>
+    </div>
+  </div>
+  <!----------------------------------------Main Page------------------------------------>
+  <div class="card-container text-center">
+    <div class="card-item">
+      <a href="" type="button" data-bs-toggle="modal" data-bs-target="#grade-one">
+        <img src="assets/G1.png" alt="">
+        <p class="fw-bolder"><span class="code">&lt;</span>
+          Grade 1
+          <span class="code">&#47;&gt;</span>
+        </p>
+      </a>
+    </div>
+    <div class="card-item">
+      <a href="" type="button" data-bs-toggle="modal" data-bs-target="#grade-two">
+        <img src="assets/G2.jpg" alt="">
+        <p class="fw-bolder"><span class="code">&lt;</span>
+          Grade 2
+          <span class="code">&#47;&gt;</span>
+        </p>
+      </a>
+    </div>
+    <div class="card-item">
+      <a href="" type="button" data-bs-toggle="modal" data-bs-target="#grade-three">
+        <img src="assets/G3.jpg" alt="">
+        <p class="fw-bolder"><span class="code">&lt;</span>
+          Grade 3
+          <span class="code">&#47;&gt;</span>
+        </p>
+      </a>
+    </div>
+
+    <div class="card-item">
+      <a href="" type="button" data-bs-toggle="modal" data-bs-target="#grade-four">
+        <img src="assets/G4.jpg" alt="">
+        <p class="fw-bolder"><span class="code">&lt;</span>
+          Grade 4
+          <span class="code">&#47;&gt;</span>
+        </p>
+      </a>
+    </div>
+    <div class="card-item">
+      <a href="" type="button" data-bs-toggle="modal" data-bs-target="#grade-five">
+        <img src="assets/G5.jpg" alt="">
+        <p class="fw-bolder"><span class="code">&lt;</span>
+          Grade 5
+          <span class="code">&#47;&gt;</span>
+        </p>
+      </a>
+    </div>
+    <div class="card-item">
+      <a href="" type="button" data-bs-toggle="modal" data-bs-target="#grade-six">
+        <img src="assets/G6.jpg" alt="">
+        <p class="fw-bolder"><span class="code">&lt;</span>
+          Grade 6
+          <span class="code">&#47;&gt;</span>
+        </p>
+      </a>
+    </div>
+  </div>
+  <div class="share-container">
+    <button type="button" name="share-button" id="sharebtn" data-bs-toggle="modal"
+      data-bs-target="#staticBackdrop">Share your work</button>
+  </div>
+
+
+  <!----------------------------------------Pop Up Upload----------------------------------->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Grade 1</h1>
+          <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+        </div>
+        <div class="modal-body text-center">
+          <fieldset>
+            <select title="dropdown" name="dropdown" class="subject-select">
+              <option value="">
+                (select your subject)
+              </option>
+              <option value="1">
+                Math
+              </option>
+              <option value="2">
+                English
+              </option>
+              <option value="3">
+                Science
+              </option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <select name="dropdown" title="" class="gradelevel-select">
+              <option value="">
+                (select your grade level)
+              </option>
+              <option value="1">
+                Grade 1
+              </option>
+              <option value="2">
+                Grade 2
+              </option>
+              <option value="3">
+                Grade 3
+              </option>
+            </select>
+          </fieldset>
+
+          <textarea name="topic" class="share-textarea" cols="30" rows="3"
+            placeholder="Paste your lesson plan here."></textarea>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary upload" onclick="upload()">Upload</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-----------------------------Pop Up Downloadables---------------------------->
+
+  <!--Grade One Popup-->
+  <div class="modal fade" id="grade-one" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="grade-oneLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="grade-oneLabel">Grade 1</h1>
+          <ul>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Subjects
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#math-subject">Math</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">English</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Science</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Filipino</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">A.P.</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Art</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Music</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">P.E.</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+
+              </ul>
+            </li>
+          </ul>
+
+        </div>
+        <div class="modal-body text-center">
+          <div class="list gradeOne">
+            <ul>
+              <p><span>Sign In First</span></p>
+            </ul>
+          </div>
+          <div class="preview-container">
+            <textarea name="topic" class="preview-textarea" cols="30" rows="3" placeholder=""></textarea>
+            <button type="button" class="btn btn-primary update" onclick="upload()">Update</button>
+          </div>
+          <div class="expand-container">
+            <div id="math-subject">
+              <ul>
+                <li onclick="readEditDownload(this, 'read')">Read</li>
+                <li onclick="readEditDownload(this, 'edit')">Edit</li>
+                <li onclick="readEditDownload(this, 'download')">Download</li>
+                <li onclick="deleteFile(this)">Delete</li>
+              </ul>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Grade Two Popup-->
+  <div class="modal fade" id="grade-three" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="grade-twoLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="grade-twoLabel">Grade 2</h1>
+          <ul>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Subjects
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#math-subject">Math</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">English</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Science</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Filipino</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">A.P.</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Art</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Music</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">P.E.</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+
+              </ul>
+            </li>
+          </ul>
+
+        </div>
+        <div class="modal-body text-center">
+          <div class="list">
+            <ul>
+              <p><span>Sign In First</span></p>
+            </ul>
+          </div>
+          <div class="preview-container">
+            <textarea name="topic" class="preview-textarea" cols="30" rows="3" placeholder=""></textarea>
+            <button type="button" class="btn btn-primary update" onclick="upload()">Update</button>
+          </div>
+          <div class="expand-container">
+            <div id="math-subject">
+              <ul>
+                <li onclick="readEditDownload(this, 'read')">Read</li>
+                <li onclick="readEditDownload(this, 'edit')">Edit</li>
+                <li onclick="readEditDownload(this, 'download')">Download</li>
+                <li onclick="deleteFile(this)">Delete</li>
+              </ul>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Grade Three Popup-->
+  <div class="modal fade" id="grade-two" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="grade-threeLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="grade-threeLabel">Grade 3</h1>
+          <ul>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Subjects
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#math-subject">Math</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">English</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Science</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Filipino</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">A.P.</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Art</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Music</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">P.E.</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+
+              </ul>
+            </li>
+          </ul>
+
+        </div>
+        <div class="modal-body text-center">
+          <div class="list">
+            <ul>
+              <p><span>Sign In First</span></p>
+            </ul>
+          </div>
+          <div class="preview-container">
+            <textarea name="topic" class="preview-textarea" cols="30" rows="3" placeholder=""></textarea>
+            <button type="button" class="btn btn-primary update" onclick="upload()">Update</button>
+          </div>
+          <div class="expand-container">
+            <div id="math-subject">
+              <ul>
+                <li onclick="readEditDownload(this, 'read')">Read</li>
+                <li onclick="readEditDownload(this, 'edit')">Edit</li>
+                <li onclick="readEditDownload(this, 'download')">Download</li>
+                <li onclick="deleteFile(this)">Delete</li>
+              </ul>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Grade Four Popup-->
+  <div class="modal fade" id="grade-four" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="grade-fourLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="grade-fourLabel">Grade 2</h1>
+          <ul>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Subjects
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#math-subject">Math</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">English</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Science</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Filipino</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">A.P.</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Art</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Music</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">P.E.</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+
+              </ul>
+            </li>
+          </ul>
+
+        </div>
+        <div class="modal-body text-center">
+          <div class="list">
+            <ul>
+              <p><span>Sign In First</span></p>
+            </ul>
+          </div>
+          <div class="preview-container">
+            <textarea name="topic" class="preview-textarea" cols="30" rows="3" placeholder=""></textarea>
+            <button type="button" class="btn btn-primary update" onclick="upload()">Update</button>
+          </div>
+          <div class="expand-container">
+            <div id="math-subject">
+              <ul>
+                <li onclick="readEditDownload(this, 'read')">Read</li>
+                <li onclick="readEditDownload(this, 'edit')">Edit</li>
+                <li onclick="readEditDownload(this, 'download')">Download</li>
+                <li onclick="deleteFile(this)">Delete</li>
+              </ul>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Grade Five Popup-->
+  <div class="modal fade" id="grade-five" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="grade-fiveLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="grade-fiveLabel">Grade 2</h1>
+          <ul>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Subjects
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#math-subject">Math</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">English</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Science</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Filipino</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">A.P.</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Art</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Music</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">P.E.</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+
+              </ul>
+            </li>
+          </ul>
+
+        </div>
+        <div class="modal-body text-center">
+          <div class="list">
+            <ul>
+              <p><span>Sign In First</span></p>
+            </ul>
+          </div>
+          <div class="preview-container">
+            <textarea name="topic" class="preview-textarea" cols="30" rows="3" placeholder=""></textarea>
+            <button type="button" class="btn btn-primary update" onclick="upload()">Update</button>
+          </div>
+          <div class="expand-container">
+            <div id="math-subject">
+              <ul>
+                <li onclick="readEditDownload(this, 'read')">Read</li>
+                <li onclick="readEditDownload(this, 'edit')">Edit</li>
+                <li onclick="readEditDownload(this, 'download')">Download</li>
+                <li onclick="deleteFile(this)">Delete</li>
+              </ul>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Grade Six Popup-->
+  <div class="modal fade" id="grade-six" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="grade-sixLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="grade-sixLabel">Grade 2</h1>
+          <ul>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Subjects
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#math-subject">Math</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">English</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Science</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Filipino</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">A.P.</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Art</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Music</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">P.E.</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+
+              </ul>
+            </li>
+          </ul>
+
+        </div>
+        <div class="modal-body text-center">
+          <div class="list">
+            <ul>
+              <p><span>Sign In First</span></p>
+            </ul>
+          </div>
+          <div class="preview-container">
+            <textarea name="topic" class="preview-textarea" cols="30" rows="3" placeholder=""></textarea>
+            <button type="button" class="btn btn-primary update" onclick="upload()">Update</button>
+          </div>
+          <div class="expand-container">
+            <div id="math-subject">
+              <ul>
+                <li onclick="readEditDownload(this, 'read')">Read</li>
+                <li onclick="readEditDownload(this, 'edit')">Edit</li>
+                <li onclick="readEditDownload(this, 'download')">Download</li>
+                <li onclick="deleteFile(this)">Delete</li>
+              </ul>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <script src="js/google-drive.js"></script>
+  <script src="js/index.js"></script>
+  <script src="accounts.google.com/gsi/client"></script>
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+  <script src="https://apis.google.com/js/api.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
