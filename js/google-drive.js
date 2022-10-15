@@ -5,8 +5,8 @@ window.onload = () => {
 
 /* ----------------------------------Global Variables--------------------------- */
 var CLIENT_ID =
-  "1010983893558-vfsbic5br6dn8vf85mmbtnaubg870e1r.apps.googleusercontent.com";
-var API_KEY = "AIzaSyDaiCOvJxMsm9bwG54GLKXqHjvWg9UsOl0";
+  "";
+var API_KEY = "";
 var DISCOVERY_DOCS = [
   "https://www.googleapis.com/discovery/v1/apis/drive/v3/rest",
 ];
